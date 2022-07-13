@@ -1,0 +1,137 @@
+.header {
+  width: 100%;
+  overflow: hidden;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.nav {
+  width: 100%;
+  position: relative;
+  z-index: 250;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+}
+
+.links {
+  margin-left: auto;
+}
+
+.nav_list {
+  display: flex;
+}
+
+.nav_link {
+  display: inline-block;
+}
+
+@media (max-width: 767px) {
+  .nav .container {
+    transition: 0.5s;
+  }
+  .nav.open .container {
+    justify-content: flex-end;
+  }
+
+  .links {
+    position: fixed;
+    width: 320px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: $color-dark-3xl;
+    display: flex;
+    padding-top: 248px;
+    justify-content: center;
+    text-align: center;
+    transform: translateX(100%);
+    transition: 0.5s;
+  }
+
+  .nav_item {
+    margin-left: 0;
+  }
+
+  .logo {
+    margin-right: 33px;
+    z-index: 300;
+  }
+
+  .nav_list {
+    flex-direction: column;
+  }
+
+  .nav_link {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 160%;
+  }
+
+  .nav_active::after {
+    top: 45px;
+  }
+
+  .burger_menu {
+    width: 30px;
+    height: 22px;
+    z-index: 100;
+    position: relative;
+    margin-right: 43px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .burger_menu .line {
+    position: relative;
+    width: 30px;
+    height: 2px;
+    background-color: $color-primary;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .line::before,
+  .line::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: $color-primary;
+    transition: 0.5s;
+  }
+
+  .line::before {
+    transform: translateY(-10px);
+  }
+
+  .line::after {
+    transform: translateY(10px);
+  }
+
+  .nav.open .burger_menu .line {
+    transform: translateY(0) rotate(90deg);
+  }
+
+  .nav.open .links {
+    transform: translateX(0);
+  }
+}
+
+.burger-menu-overlay.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 70;
+  display: block;
+  background: rgba(41, 41, 41, 0.6);
+}

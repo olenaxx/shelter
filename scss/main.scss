@@ -1,0 +1,32 @@
+//abstracts
+@import "abstracts/variables";
+// @import "abstracts/fonts";
+// @import "abstracts/mixins";
+// @import "abstracts/placeholders";
+
+//base
+@import "base/base";
+
+//components
+@import "components/popap";
+@import "components/navigation";
+@import "components/burger-menu";
+@import "components/hero";
+@import "components/about";
+@import "components/pets";
+@import "components/carousel";
+@import "components/help";
+@import "components/donation";
+@import "components/logo";
+@import "components/button";
+
+//layouts
+@import "layouts/header";
+@import "layouts/footer";
+
+// .container {
+//   max-width: 1280px;
+//   margin: 0 auto;
+//   padding: 0 40px;
+//   outline: 2px solid red;
+// }

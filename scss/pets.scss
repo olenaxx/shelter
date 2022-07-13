@@ -1,0 +1,22 @@
+//abstracts
+@import "abstracts/variables";
+// @import "abstracts/fonts";
+// @import "abstracts/mixins";
+// @import "abstracts/placeholders";
+
+//base
+@import "base/base";
+
+//components
+// @import "components/popap";
+@import "components/navigation";
+@import "components/burger-menu";
+@import "components/logo";
+@import "components/button";
+@import "components/pets-card";
+@import "components/pagination";
+
+//layouts
+// @import "layouts/header";
+@import "layouts/header.pets";
+@import "layouts/footer";

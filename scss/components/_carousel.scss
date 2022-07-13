@@ -1,0 +1,54 @@
+.pets_slider {
+  display: flex;
+  align-items: center;
+}
+
+.carousel_container {
+  width: 990px;
+  overflow: hidden;
+}
+
+.carousel {
+  position: relative;
+  left: -990px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  gap: 90px;
+}
+
+@keyframes move-right {
+  from {
+    left: -990px;
+  }
+  to {
+    left: -1980px;
+  }
+}
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 1s;
+}
+
+@keyframes move-left {
+  from {
+    left: -990px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 1s;
+}
+
+.hidden {
+  display: none;
+}

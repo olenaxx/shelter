@@ -1,0 +1,122 @@
+.hero {
+  background: $background;
+
+  &_container {
+    padding-top: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -140px;
+  }
+
+  &_content {
+    padding-top: 163px;
+  }
+
+  &_title {
+    width: 310px;
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+    color: $color-light-xl;
+  }
+
+  &_text {
+    margin-top: 42px;
+    margin-bottom: 60px;
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: $color-dark-s;
+  }
+
+  &_link-button {
+    padding: 15px 45px;
+    background: $color-primary;
+    color: $color-dark-3xl;
+    text-decoration: none;
+    border-radius: 100px;
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    transition: 0.3s;
+  }
+
+  &_link-button:hover {
+    background: $color-primary-light;
+  }
+
+  &_img {
+    width: 698px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .hero {
+    &_container {
+      display: flex;
+      flex-direction: column;
+      padding-top: 140px;
+    }
+
+    &_content {
+      padding-top: 60px;
+      margin-left: 124px;
+      margin-right: 124px;
+    }
+
+    &_link {
+      text-align: center;
+      margin-top: 57px;
+      margin-bottom: 115px;
+    }
+
+    &_img {
+      width: 569px;
+      margin-left: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .hero {
+    &_container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &_content {
+      padding: 0;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    &_title {
+      margin: 0 auto;
+      width: 260px;
+      text-align: center;
+      font-size: 25px;
+      letter-spacing: 0.06em;
+    }
+
+    &_text {
+      width: 300px;
+      text-align: center;
+    }
+
+    &_link {
+      text-align: center;
+    }
+
+    &_img {
+      width: 260px;
+      margin-top: 118px;
+      margin-left: auto;
+    }
+  }
+}

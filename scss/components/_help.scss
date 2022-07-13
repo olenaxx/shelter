@@ -1,0 +1,103 @@
+.help {
+  margin-bottom: 100px;
+
+  &_title {
+    padding-top: 80px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
+  }
+
+  &_container {
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+
+  &_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 55px 120px;
+  }
+
+  &_item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &_icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  &_title-item {
+    margin-top: 30px;
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .help {
+    &_container {
+      padding-left: 39px;
+      padding-right: 39px;
+    }
+
+    &_items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 55px 60px;
+    }
+
+    &_item {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .help {
+    margin-bottom: 42px;
+
+    &_container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    &_title {
+      padding-top: 38px;
+      margin-bottom: 42px;
+      font-size: 25px;
+    }
+
+    &_items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    &_icon {
+      width: 50px;
+      height: 50px;
+    }
+
+    &_title-item {
+      margin-top: 20px;
+      font-size: 15px;
+    }
+  }
+}

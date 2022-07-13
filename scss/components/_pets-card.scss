@@ -1,0 +1,119 @@
+.main {
+  background-color: $color-light-l;
+}
+
+.pets {
+  background-color: $color-light-l;
+
+  &_title {
+    padding-top: 200px;
+    padding-bottom: 43px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
+  }
+
+  &_gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 25px;
+    grid-column-gap: 40px;
+    padding: 15px 0;
+    background-color: #f6f6f6;
+  }
+
+  &_card {
+    width: 270px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-light-s;
+    border-radius: 9px;
+    transition: 0.3s;
+  }
+
+  &_card:hover {
+    cursor: pointer;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    background-color: $color-light-xl;
+    border-radius: 9px;
+  }
+
+  &_card:hover .pets_button-secondary {
+    background-color: $color-primary-light;
+    border: 2px solid transparent;
+  }
+
+  &_subtitle {
+    padding: 30px 0;
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+  }
+
+  &_button-secondary {
+    border: 2px solid $color-primary;
+    margin-left: 41.5px;
+    margin-right: 41.5px;
+    background-color: transparent;
+    transition: 0.3s;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .pets {
+    &_title {
+      padding-top: 200px;
+      padding-bottom: 6px;
+    }
+
+    &_gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px 40px;
+      width: 708px;
+      justify-content: center;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    &_card {
+      width: 270px;
+    }
+  }
+
+  .card-none {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .pets {
+    &_title {
+      font-size: 25px;
+      padding-top: 162px;
+      width: 300px;
+    }
+
+    &_gallery {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .none {
+    display: none;
+  }
+}

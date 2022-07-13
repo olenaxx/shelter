@@ -1,0 +1,64 @@
+.pets {
+  &_pagination-div {
+    margin-top: 45px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &_pagination-button {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+  }
+}
+
+.button-1,
+.button-2 {
+  color: $color-dark-s;
+  border: 2px solid $color-dark-s;
+}
+
+.button-3 {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: $color-dark-3xl;
+  background: $color-primary;
+  border: 2px solid $color-primary;
+}
+
+.button-4,
+.button-5 {
+  color: $color-dark-3xl;
+  border: 2px solid $color-primary;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .pets {
+    &_pagination-div {
+      margin-top: 20px;
+      padding-bottom: 75px;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .pets {
+    &_pagination-div {
+      padding-bottom: 42px;
+    }
+
+    &_pagination-button {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+}
