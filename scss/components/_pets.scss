@@ -1,0 +1,205 @@
+.pets {
+  background: $color-light-l;
+  &_container {
+    padding-bottom: 100px;
+  }
+
+  &_title {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
+  }
+
+  &_slider {
+    display: flex;
+    align-items: center;
+  }
+
+  &_button-left {
+    margin-right: 53px;
+    background-color: transparent;
+  }
+
+  &_card {
+    width: 270px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-light-s;
+    border-radius: 9px;
+    transition: 0.3s;
+  }
+
+  &_card:hover {
+    cursor: pointer;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    background-color: $color-light-xl;
+    border-radius: 9px;
+  }
+
+  &_subtitle {
+    padding: 30px 0;
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: $color-dark-l;
+  }
+
+  &_button-secondary {
+    border: 2px solid $color-primary;
+    margin-left: 41.5px;
+    margin-right: 41.5px;
+    background-color: transparent;
+    transition: 0.3s;
+  }
+
+  &_card:hover .pets_button-secondary {
+    background-color: $color-primary-light;
+    border: 2px solid transparent;
+  }
+
+  &_button-right {
+    top: 0;
+    background-color: transparent;
+    margin-left: 53px;
+    transition: 0.3s;
+  }
+
+  &_link-button {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 261px;
+    margin: 58px auto 0 auto;
+    padding: 15px 45px;
+    background: $color-primary;
+    color: $color-dark-3xl;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: 0.3s;
+  }
+
+  &_link-button:hover {
+    background: $color-primary-light;
+  }
+}
+
+.icon-arrow {
+  height: 6px;
+  fill: $color-dark-3xl;
+}
+
+.button-slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border: 2px solid $color-primary;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-slider:hover {
+  background: $color-primary-light;
+  border: 2px solid $color-primary-light;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .pets {
+    &_button-left {
+      margin-right: 12px;
+    }
+
+    &_slider {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_button-right {
+      margin-left: 12px;
+    }
+
+    &_link-button {
+      margin: 60px auto 0 auto;
+    }
+  }
+
+  .card-none {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .pets {
+    &_container {
+      padding-top: 42px;
+      padding-bottom: 42px;
+    }
+
+    &_title {
+      text-align: center;
+      width: 300px;
+      font-size: 25px;
+      margin-bottom: 42px;
+      padding: 0;
+    }
+
+    &_slider {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
+      order: 1;
+      width: 270px;
+    }
+
+    &_button-left {
+      order: 2;
+      margin-top: 20px;
+      margin-left: 35px;
+    }
+
+    // &_card-slider {
+    //   display: flex;
+    //   justify-content: center;
+    // }
+
+    &_button-right {
+      order: 3;
+      margin-top: 20px;
+      margin-left: 48px;
+    }
+
+    &_link-button {
+      margin-top: 42px;
+    }
+  }
+
+  .card-none {
+    display: none;
+  }
+
+  .card-none-two {
+    display: none;
+  }
+}

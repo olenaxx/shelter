@@ -1,0 +1,146 @@
+.donation {
+  background-color: $color-light-l;
+
+  &_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  &_image {
+    margin-right: 30px;
+  }
+
+  &_title {
+    width: 300px;
+    margin-bottom: 20px;
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
+  }
+
+  &_subtitle {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    margin-bottom: 20px;
+    color: $color-dark-l;
+  }
+
+  &_link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: $color-primary;
+    padding: 10px 15px;
+    border-radius: 9px;
+    width: 351px;
+    transition: 0.3s;
+  }
+
+  &_link:hover {
+    background-color: $color-primary-light;
+  }
+
+  &_icon {
+    width: 30px;
+    height: 23px;
+    margin-right: 15px;
+  }
+
+  &_number {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
+  }
+
+  &_text {
+    margin-top: 20px;
+    font-family: "Arial";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: $color-dark-m;
+    width: 380px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .donation {
+    &_container {
+      flex-direction: column-reverse;
+    }
+
+    &_content {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .donation {
+    &_container {
+      flex-direction: column-reverse;
+      padding-bottom: 38px;
+      padding-top: 42px;
+    }
+
+    &_image {
+      width: 260px;
+      margin-right: 0;
+    }
+
+    &_content {
+      margin-bottom: 42px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    &_title {
+      display: block;
+      text-align: center;
+      width: 300px;
+      font-size: 25px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &_subtitle {
+      text-align: center;
+      line-height: 160%;
+      letter-spacing: normal;
+    }
+
+    &_link {
+      width: 281px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &_number {
+      font-size: 15px;
+    }
+
+    &_text {
+      display: block;
+      width: 280px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: justify;
+    }
+  }
+}

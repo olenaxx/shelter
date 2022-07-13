@@ -1,0 +1,105 @@
+.about {
+  &_container {
+    background-color: $color-light-xl;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    padding-left: 215px;
+    padding-right: 175px;
+  }
+
+  &_content {
+    margin-left: 120px;
+  }
+
+  &_title {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
+    width: 370px;
+  }
+
+  &_text {
+    margin-top: 25px;
+    width: 430px;
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: $color-dark-xl;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .about {
+    &_container {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0;
+      margin: 0 auto;
+    }
+
+    &_img {
+      margin-top: 80px;
+      margin-bottom: 100px;
+    }
+
+    &_content {
+      margin: 0;
+    }
+
+    &_title {
+      margin-top: 80px;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .about {
+    &_container {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      padding: 38px 0;
+    }
+
+    &_img {
+      width: 260px;
+      margin-top: 42px;
+    }
+
+    &_content {
+      text-align: center;
+      width: 300px;
+      margin-left: 0;
+    }
+
+    &_title {
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-bottom: 25px;
+      width: 300px;
+      font-size: 25px;
+      letter-spacing: 0.06em;
+    }
+
+    &_text {
+      width: 270px;
+      margin: 0;
+      margin-top: 25px;
+      margin-left: 15px;
+      margin-right: 15px;
+      text-align: justify;
+    }
+  }
+}

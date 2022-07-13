@@ -1,0 +1,68 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  &_container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.logo {
+  &_title {
+    color: $color-dark-l;
+  }
+
+  &_subtitle {
+    color: $color-dark-3xl;
+  }
+}
+
+.nav {
+  &_item {
+    position: relative;
+  }
+
+  &_link {
+    color: $color-dark-l;
+  }
+
+  &_active::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: $color-primary;
+    top: 23px;
+    left: 0;
+  }
+
+  &_active {
+    color: $color-dark-3xl;
+  }
+
+  &_link:hover {
+    color: $color-dark-3xl;
+  }
+}
+
+@media (max-width: 767px) {
+  .burger_menu .line,
+  .line::after,
+  .line::before {
+    background-color: $color-dark-3xl;
+  }
+
+  .links {
+    background-color: $color-light-xl;
+    transition: 0.5s;
+  }
+
+  .nav_active::after {
+    top: 45px;
+  }
+}

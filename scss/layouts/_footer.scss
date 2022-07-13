@@ -1,0 +1,160 @@
+.footer {
+  background: $background;
+
+  &_content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+
+  &_contacts-title {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-light-xl;
+  }
+
+  &_contacts {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 282px;
+    height: 250px;
+  }
+
+  &_div {
+    display: flex;
+    align-items: center;
+  }
+
+  &_email-icon {
+    margin-right: 20px;
+    width: 40px;
+    height: 32px;
+  }
+
+  &_tel-icon {
+    margin-right: 20px;
+    width: 40px;
+    height: 32px;
+  }
+
+  &_link {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $color-primary;
+    text-decoration: none;
+  }
+
+  &_locations {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 302px;
+    height: 250px;
+  }
+
+  &_locations-title {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-light-xl;
+  }
+
+  &_map {
+    text-decoration: none;
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $color-primary;
+  }
+
+  &_map-icon {
+    width: 22px;
+    height: 32px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .footer {
+    &_content {
+      width: 708px;
+      padding-top: 15px;
+      margin-left: auto;
+      margin-right: auto;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 65px 60px;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer {
+    &_content {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 300px;
+    }
+
+    &_contacts {
+      padding-top: 0;
+      text-align: center;
+      margin-bottom: 40px;
+      height: 208px;
+      justify-content: flex-start;
+    }
+
+    &_contacts-title {
+      font-size: 25px;
+    }
+
+    &_locations {
+      padding: 0;
+      padding-bottom: 0;
+      justify-content: flex-start;
+      padding-bottom: 40px;
+      height: 222px;
+    }
+
+    &_locations-title {
+      font-size: 25px;
+      width: 270px;
+    }
+
+    &_div-one {
+      margin-left: 32px;
+    }
+
+    &_div {
+      margin-top: 40px;
+    }
+
+    &_img {
+      padding-top: 45px;
+      width: 260px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
